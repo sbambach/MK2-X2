@@ -3,7 +3,7 @@
 
 Credits
 -------
-blender renderer taken from [Mendel90 Project](https://github.com/nophead/Mendel90).
+STL to PNG renderer taken from [Mendel90 Project](https://github.com/nophead/Mendel90).
 
 [RebeliX Project](http://reprap4u.cz/rebelix/)
 

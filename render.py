@@ -34,10 +34,15 @@ def render(parts = None):
                 stls.append("printed" + os.sep + i[:-4])
 
     for i in stls:
-        command = 'blender -b  utils' + os.sep + 'render.blend -P utils' + os.sep + 'viz.py -- ' + \
-            stl_dir + os.sep + i + '.stl ' + render_dir + os.sep + i + '.png'
-        print(command)
-        subprocess.check_output(command.split())
+        command = ['blender', 
+                   '-b', "utils%srender.blend" % os.sep,
+                   '-P', "utils%sviz.py" % os.sep, 
+                   '--', 
+                   stl_dir + os.sep + i + '.stl',
+                   render_dir + os.sep + i + '.png'
+                  ]
+        print(' '.join(command))
+        subprocess.check_output(command)
 
 if __name__ == '__main__':
     if len(sys.argv) > 0:

@@ -6,5 +6,5 @@ fi
 
 export PATH="${PATH}:${PATH_TO_BLENDER}"
 
-python render.py $@
+python render.py "$@"
 

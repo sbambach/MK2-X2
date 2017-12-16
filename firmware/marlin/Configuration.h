@@ -787,11 +787,11 @@
 
 // Travel limits after homing (units are in mm)
 #define X_MIN_POS -32
-#define Y_MIN_POS -7
+#define Y_MIN_POS -8
 #define Z_MIN_POS 0
 #define X_MAX_POS 215
-#define Y_MAX_POS 200
-#define Z_MAX_POS 180
+#define Y_MAX_POS 205
+#define Z_MAX_POS 205
 
 // If enabled, axes won't move below MIN_POS in response to movement commands.
 #define MIN_SOFTWARE_ENDSTOPS
@@ -879,7 +879,7 @@
 #if ENABLED(AUTO_BED_LEVELING_LINEAR) || ENABLED(AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 3
+  #define GRID_MAX_POINTS_X 2
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).

@@ -1123,11 +1123,11 @@
    * It is advised to set X/Y_HOME_BUMP_MM to 0.
    * M914 X/Y to live tune the setting
    */
-  //#define SENSORLESS_HOMING // TMC2130 only
+  #define SENSORLESS_HOMING // TMC2130 only
 
   #if ENABLED(SENSORLESS_HOMING)
-    #define X_HOMING_SENSITIVITY  8
-    #define Y_HOMING_SENSITIVITY  8
+    #define X_HOMING_SENSITIVITY  -2
+    #define Y_HOMING_SENSITIVITY  -2
     #define X_HOME_BUMP_MM 0
     #define Y_HOME_BUMP_MM 0
   #endif
